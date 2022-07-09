@@ -7,6 +7,7 @@
 목표
 - 교육 데이터 기간 직후 7일 기간 동안 각 고객이 구매할 article_ids 예측
 - 샘플 submission에 있는 모든 customer_id 값을 예측, 테스트 기간 동안 구매한 모든 고객은 train.csv에 구매 내역 여부 상관없이 스코어링
+
 데이터
 - articles.csv
     - 구매가 가능한 각 article_id에 대한 메타 정보
