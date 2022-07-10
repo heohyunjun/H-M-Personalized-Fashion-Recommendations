@@ -23,10 +23,10 @@
 - np.concatenate
 
 
-    a1 = np.array([1,2,3])
-    b1 = np.array([4,5,6])
-    print(np.concatenate((a1, b1), axis = 0))
-    # [out] : [1 2 3 4 5 6]
+        a1 = np.array([1,2,3])
+        b1 = np.array([4,5,6])
+        print(np.concatenate((a1, b1), axis = 0))
+        # [out] : [1 2 3 4 5 6]
 
 
 - agg 함수()
