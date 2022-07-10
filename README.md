@@ -42,7 +42,7 @@
   - 열마다 agg()
 
 
-      hist_df.groupby("customer_id").agg({"article_id": list, "week": list})
+        hist_df.groupby("customer_id").agg({"article_id": list, "week": list})
 
   
 
