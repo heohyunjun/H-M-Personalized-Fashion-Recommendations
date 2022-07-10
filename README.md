@@ -19,3 +19,33 @@
     - 각 날짜에 대한 각 고객의 구매 및 추가 정보
     - 중복 행은 동일한 항목의 여러 구매에 해당
 
+### 알게된 함수
+- np.concatenate
+
+
+    a1 = np.array([1,2,3])
+    b1 = np.array([4,5,6])
+    print(np.concatenate((a1, b1), axis = 0))
+    # [out] : [1 2 3 4 5 6]
+
+
+- agg 함수()
+  - 여러개의 함수를 여러 열에 적용 가능
+  - 모든열에 여러 함수를 매핑 : group객체.agg([함수1,함수2,함수3,…])
+  - 각 열마다 다른 함수를 매핑 : group객체.agg({‘열1’: 함수1, ‘열2’:함수2, …})
+
+  - 기존
+
+  ![img.png](img/img.png)
+
+
+  - 열마다 agg()
+
+
+      hist_df.groupby("customer_id").agg({"article_id": list, "week": list})
+
+  
+
+  ![img_1.png](img/img_1.png)
+   
+
